@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Grão<span class="text-bold">Nobre</span></a>
+            <a class="navbar-brand fw-bold" href="#">Grão<span class="text-warning">Nobre</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,18 +19,18 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto p-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Depoimentos</a>
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                 </ul>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar Agora
                 </button>
                 
@@ -46,7 +46,7 @@
                                 <p>Kit de degustação <br> 1 pacote de 250g <br> 5 pacotes de 250g</p>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Ir para o carrinho</button>
+                                <button type="button" class="btn btn-warning">Ir para o carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -55,6 +55,202 @@
             </div>
         </div>
     </nav>
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <h1 class="fw-bold display-5">
+                        Café de origem,<br>torrado com propósito.
+                    </h1>
+                    <p class="text-secondary">
+                        A Grão Nobre trabalha direto com pequenos produtores para levar até você grãos especiais, orrados em lotes pequenos toda semana.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="./img_hero.jpg" alt="Xícaras de café sobre bandeira do Brasil" class="rounded-4 img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="py-5">
+        <div class="container text-center">
+            <p class="text-uppercase fw-bold text-warning mb-0">
+                Quem já experimentou
+            </p>
+            <h2 class="fw-bold mb-4">
+                O que dizem nossos clientes
+            </h2>
+
+            <div id="carouselExampleCaptions"
+                class="carousel slide carousel-dark">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+                    </button>
+                </div>
+
+                <div class="carousel-inner pb-5">
+                    <div class="carousel-item active">
+                        <div class="col-md-6 mx-auto py-3">
+                            <p class="text-warning mb-2">
+                                ★★★★★
+                            </p>
+                            <p class="fst-italic">
+                                "Melhor café que já experimentei em assinatura. Chega sempre fresquinho."
+                            </p>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <img src="./img_user.jpg" class="rounded-circle" width="45" height="45" alt="Marina Alves">
+
+                                <div class="text-start">
+                                    <p class="fw-bold mb-0">
+                                        Marina Alves
+                                    </p>
+                                    <small class="text-secondary">
+                                        Assinante desde 2023
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-6 mx-auto py-3">
+                            <p class="text-warning mb-2">
+                                ★★★★★
+                            </p>
+                            <p class="fst-italic">
+                                "Café excelente e sempre muito fresco. A qualidade realmente faz diferença."
+                            </p>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <img src="./img_user.jpg" class="rounded-circle" width="45" height="45" alt="Lucas Silva">
+
+                                <div class="text-start">
+                                    <p class="fw-bold mb-0">
+                                        Lucas Silva
+                                    </p>
+                                    <small class="text-secondary">
+                                        Assinante desde 2024
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEPOIMENTO 3 -->
+                    <div class="carousel-item">
+                        <div class="col-md-6 mx-auto py-3">
+                            <p class="text-warning mb-2">
+                                ★★★★★
+                            </p>
+                            <p class="fst-italic">
+                                "Adorei conhecer cafés de diferentes produtores. Recomendo muito!"
+                            </p>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <img src="./img_user.jpg" class="rounded-circl" width="45" height="45"  alt="Ana Souza">
+
+                                <div class="text-start">
+                                    <p class="fw-bold mb-0">
+                                        Ana Souza
+                                    </p>
+                                    <small class="text-secondary">
+                                        Assinante desde 2022
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                    </span>
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+                </button>
+
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                    </span>
+                    <span class="visually-hidden">
+                        Próximo
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-light py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">
+                Perguntas frequentes
+            </h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Qual a validade do café após aberto?
+                                </button>
+                            </h2>
+
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+                                <div class="accordion-body">
+                                    Para preservar o aroma e o sabor, recomendamos consumir o café em até 30 dias após a abertura.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Vocês entregam para todo o Brasil?
+                                </button>
+                            </h2>
+
+                            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sim! Enviamos para todas as regiões, com prazo médio de 3 a 7 dias úteis dependendo da localidade.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Posso cancelar minha assinatura quando quiser?
+                                </button>
+                            </h2>
+
+                            <div id="collapseThree" class="accordion-collapse collapse" -bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sim! Você pode cancelar sua assinatura quando desejar, sem multa ou fidelidade.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
